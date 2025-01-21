@@ -97,6 +97,7 @@ a{
 header{
     background-color: var(--bdo-primary);
     padding: 0.75rem;
+    margin-bottom: 5rem;
     box-shadow: 0px 0px 6px 0px grey;
     text-align: center;
     position: fixed;
@@ -141,7 +142,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 .column-items{
     flex-direction: column;
