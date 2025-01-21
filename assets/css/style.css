@@ -133,16 +133,17 @@ header{
 .row{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .column-items{
     flex-direction: column;
-    flex-wrap: nowrap;
+    /* flex-grow: 1; */
     gap: 0.70rem;
 }
 
 .item-photo{
     height: 380px;
-    width: 270px;
+    /* width: 270px; */
 }
 
 .item-details{
