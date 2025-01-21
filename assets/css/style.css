@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", serif;
+
+
 }
 
 :root{
     --bdo-primary: #ff6900;
+    --bdo-light: rgb(136, 135, 135);
     --bdo-bg-lighter: #ffff;
     --bdo-bg-dark: #1a1a1a;
     --bdo-discount: red;
@@ -28,11 +32,68 @@ a{
     display: flex;
 }
 
-.jcc{
+.spa{
     justify-content: space-around;
 }
+/* price-labels */
+.discount{
+    background-color: red;
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 600;
+    padding: 0.20rem 0.20rem;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
 
-/* #main */
+
+.label{
+    
+        background-color: var(--bdo-label);
+        color: white;
+        font-size: 0.55rem;
+        font-weight: 500;
+        padding: 0.20rem 0.20rem;
+        position: relative;
+        bottom: 50px;
+        z-index: 1;
+    
+
+}
+
+.heart{
+    background-color: var(--bdo-bg-lighter);
+    color: var(--bdo-bg-dark);
+    font-size: 0.70rem;
+    font-weight: 500;
+    padding: 0.60rem 0.60rem;
+    position: relative;
+    bottom: 380px;
+    left: 145px;
+    z-index: 1;
+}
+
+.heart:hover{
+    color: red;
+}
+
+.discount-price{
+    color: var(--bdo-discount);
+    font-size: 0.55rem;
+    font-weight: 600;
+
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: var(--bdo-light);
+    font-weight: 200;
+}
+
+/* #endprice-labels */
+
+/* #header-style */
 header{
     background-color: var(--bdo-primary);
     padding: 0.75rem;
@@ -41,6 +102,7 @@ header{
     
     a,i{
         color: var(--bdo-bg-lighter);
+        font-weight: 500;
     }
     
     .logo{
@@ -56,4 +118,50 @@ header{
     }
 }
 
-/* #end-main */
+/* #end-header-style */
+
+/* #main */
+
+.container{
+    width: 76%;
+    min-height: 800px;
+    margin: auto;
+    margin-top: 2.5rem;
+
+}
+
+.row{
+    flex-direction: row;
+}
+.column-items{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.70rem;
+}
+
+.item-photo{
+    height: 380px;
+    width: 270px;
+}
+
+.item-details{
+    flex-direction: column;
+    .item-brand{
+        font-size: 0.60rem;
+        color: var(--bdo-light);
+    }
+    .item-name{
+        font-size: 0.65rem;
+        font-weight: 550;
+    }
+    .item-price{
+        font-size: 0.55rem;
+        font-weight: 600;
+        position: relative;
+        bottom: 30%;
+    }
+    .discount{
+        
+    }
+
+}
