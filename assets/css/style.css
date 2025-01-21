@@ -100,6 +100,11 @@ header{
     box-shadow: 0px 0px 6px 0px grey;
     text-align: center;
     position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+
 
     
     a,i{
@@ -147,8 +152,22 @@ header{
 .item-photo{
     height: 380px;
     width: 320px;
-    /* margin-bottom: 7rem; */
+    position: relative;
+    display: inline-block;
+    .top{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
 }
+
+.item-photo:hover .top{
+    display: inline;
+}
+
+
 
 img:hover{
     background-image: url(/assets/img/1b.webp);
