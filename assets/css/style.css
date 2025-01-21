@@ -42,22 +42,24 @@ a{
     font-size: 0.55rem;
     font-weight: 600;
     padding: 0.20rem 0.20rem;
-    position: relative;
-    bottom: 50px;
-    z-index: 6;
+    position: absolute;
+    right: 290px;
+    top: 420px;
+    z-index: 7;
 }
 
 
 .label{
     
-        background-color: var(--bdo-label);
-        color: white;
-        font-size: 0.55rem;
-        font-weight: 500;
-        padding: 0.20rem 0.20rem;
-        position: relative;
-        bottom: 50px;
-        z-index: 6;
+    background-color: var(--bdo-label);
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 500;
+    padding: 0.20rem 0.20rem;
+    position: absolute;
+    right: 230px;
+    top: 420px;
+    z-index: 7;
     
 
 }
@@ -68,10 +70,10 @@ a{
     font-size: 0.70rem;
     font-weight: 500;
     padding: 0.60rem 0.60rem;
-    position: relative;
-    bottom: 380px;
-    left: 145px;
-    z-index: 6;
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    z-index: 7;
 }
 
 .heart:hover{
@@ -103,7 +105,7 @@ header{
     width: 100%;
     top: 0%;
     left: 0%;
-    z-index: 2;
+    z-index: 99;
 
 
     
@@ -153,7 +155,6 @@ header{
     height: 380px;
     width: 320px;
     position: relative;
-    display: inline-block;
     .top{
         display: none;
         position: absolute;
@@ -169,11 +170,7 @@ header{
 
 
 
-img:hover{
-    background-image: url(/assets/img/1b.webp);
-    height: 380px;
-    width: 320px;
-}
+
 
 .item-details{
     flex-direction: column;
