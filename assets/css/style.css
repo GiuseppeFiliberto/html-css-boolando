@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bdo-primary: #ff6900;
+    --bdo-bg-lighter: #ffff;
+    --bdo-bg-dark: #1a1a1a;
+    --bdo-discount: red;
+    --bdo-label: #008000;
+}
+
+.w-100{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.debug{
+    border: 1px dashed;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jcc{
+    justify-content: space-around;
+}
+
+/* #main */
+header{
+    background-color: var(--bdo-primary);
+    padding: 0.75rem;
+    box-shadow: 0px 0px 6px 0px grey;
+
+    
+    a,i{
+        color: var(--bdo-bg-lighter);
+    }
+    
+    .logo{
+        width: 6rem;
+    }
+
+    .categories{
+        gap: 0.75rem;
+    }
+
+    .icons{
+        gap: 0.50rem;
+    }
+}
+
+/* #end-main */
